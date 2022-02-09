@@ -10,21 +10,24 @@
     <h1>Registration Form</h1>
     <div id="form">
       <div>
-        <input type="text" name="first-name" placeholder="First name" />
+        <input type="text" name="first-name" placeholder="First name" id="firstName"/>
       </div>
       <div>
-        <input type="text" name="last-name" placeholder="Last name" />
+        <input type="text" name="last-name" placeholder="Last name" id="lastName"/>
       </div>
-      <div><input type="radio" />Local <input type="radio" />Tourists</div>
-      <div id="for-locals">
+      <div>
+        <input type="radio" value="local" name="radio"/>Local 
+        <input type="radio" value="tourists" name="radio"/>Tourists
+      </div>
+      <div id="for-locals" style="display:none">
         <h1>Locals: Please enter your postal code</h1>
-        <input type="text" name="postal-code" />
+        <input type="text" name="postal-code" id="postal"/>
       </div>
-      <div>
+      <div id="for-tourists" style="display:none">
         <h1>Tourists: Please enter your hotel name</h1>
-        <input type="text" name="hotel" />
+        <input type="text" name="hotel" id="hotel"/>
       </div>
-      <button>Sign Up</button>
+      <button id="signUp">Sign Up</button>
     </div>
     <div id="result"></div>
     <script src="index.js"></script>
